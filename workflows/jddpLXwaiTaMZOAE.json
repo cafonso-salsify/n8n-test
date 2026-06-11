@@ -7,8 +7,8 @@
       "type": "n8n-nodes-base.manualTrigger",
       "typeVersion": 1,
       "position": [
-        0,
-        -16
+        80,
+        208
       ],
       "id": "e4873d88-7d69-4d94-ad9f-2555f9d86a6a",
       "name": "When clicking ‘Execute workflow’"
@@ -24,7 +24,7 @@
           },
           "conditions": [
             {
-              "id": "86781616-da46-452b-a5dc-3a5b6b52aeee",
+              "id": "22aa5eb9-c67d-4fa2-a83e-506f6e9c3d41",
               "leftValue": "",
               "rightValue": "",
               "operator": {
@@ -41,10 +41,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        208,
-        -16
+        288,
+        208
       ],
-      "id": "be0bd62c-a5be-4e5d-883b-16c585953276",
+      "id": "562fbe34-6f2e-40f2-b80b-ffcd3391d2b5",
       "name": "If"
     },
     {
@@ -55,9 +55,9 @@
       "typeVersion": 2,
       "position": [
         496,
-        -144
+        112
       ],
-      "id": "38547674-f737-462e-b24b-729d99e5b571",
+      "id": "a347f1e8-bd5b-4779-9f45-2535db1f9845",
       "name": "Code in JavaScript"
     }
   ],
@@ -91,7 +91,7 @@
     "availableInMCP": false
   },
   "triggerCount": 0,
-  "versionId": "ff767717-ebc8-4319-9d8f-d8427a9ca745",
+  "versionId": "459b7e18-a393-414e-8b2a-b0354d38a7e2",
   "owner": {
     "type": "personal",
     "projectId": "wa8OeadvFvy5w2sE",
