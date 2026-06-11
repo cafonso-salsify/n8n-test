@@ -12,31 +12,12 @@
       ],
       "id": "e4873d88-7d69-4d94-ad9f-2555f9d86a6a",
       "name": "When clicking ‘Execute workflow’"
-    },
-    {
-      "parameters": {
-        "options": {}
-      },
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 3.4,
-      "position": [
-        208,
-        -16
-      ],
-      "id": "6d88b5bf-89a5-4d2b-b277-c081f0662d8e",
-      "name": "Edit Fields"
     }
   ],
   "connections": {
     "When clicking ‘Execute workflow’": {
       "main": [
-        [
-          {
-            "node": "Edit Fields",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        []
       ]
     }
   },
@@ -46,7 +27,7 @@
     "availableInMCP": false
   },
   "triggerCount": 0,
-  "versionId": "bcb4dc9d-88e2-45e0-b765-37b2fa158a8e",
+  "versionId": "2d0e4e75-a341-45d2-a3a5-62d5367d8134",
   "owner": {
     "type": "personal",
     "projectId": "wa8OeadvFvy5w2sE",
