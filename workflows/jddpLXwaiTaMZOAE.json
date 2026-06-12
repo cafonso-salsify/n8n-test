@@ -12,55 +12,12 @@
       ],
       "id": "e4873d88-7d69-4d94-ad9f-2555f9d86a6a",
       "name": "When clicking ‘Execute workflow’"
-    },
-    {
-      "parameters": {
-        "jsCode": "// Loop over input items and add a new field called 'myNewField' to the JSON of each one\nfor (const item of $input.all()) {\n  item.json.myNewField = 1;\n}\n\nreturn $input.all();"
-      },
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
-      "position": [
-        288,
-        208
-      ],
-      "id": "12840945-ade3-4848-b2ff-165f8c13e4c2",
-      "name": "Code in JavaScript"
-    },
-    {
-      "parameters": {
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.agent",
-      "typeVersion": 3.1,
-      "position": [
-        496,
-        208
-      ],
-      "id": "b32cef41-90ba-4b97-9e9a-636631ffb532",
-      "name": "AI Agent"
     }
   ],
   "connections": {
     "When clicking ‘Execute workflow’": {
       "main": [
-        [
-          {
-            "node": "Code in JavaScript",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Code in JavaScript": {
-      "main": [
-        [
-          {
-            "node": "AI Agent",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        []
       ]
     }
   },
@@ -70,7 +27,7 @@
     "availableInMCP": false
   },
   "triggerCount": 0,
-  "versionId": "17ff016d-4aeb-40f8-8eb7-1b56d24cfa35",
+  "versionId": "563d5fa8-9b4c-4d26-9b6f-82da50ad7897",
   "owner": {
     "type": "personal",
     "projectId": "wa8OeadvFvy5w2sE",
