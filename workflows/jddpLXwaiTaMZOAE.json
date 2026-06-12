@@ -1,74 +1,52 @@
 {
-  "id": "jddpLXwaiTaMZOAE",
-  "name": "My workflow",
+  "name": "Test Workflow",
   "nodes": [
     {
       "parameters": {},
       "type": "n8n-nodes-base.manualTrigger",
       "typeVersion": 1,
       "position": [
-        80,
-        208
+        0,
+        0
       ],
       "id": "e4873d88-7d69-4d94-ad9f-2555f9d86a6a",
-      "name": "When clicking ‘Execute workflow’"
+      "name": "When clicking 'Execute workflow'"
     },
     {
       "parameters": {
-        "conditions": {
-          "options": {
-            "caseSensitive": true,
-            "leftValue": "",
-            "typeValidation": "strict",
-            "version": 3
-          },
-          "conditions": [
-            {
-              "id": "e388e052-7d97-4ddb-a364-21e89f29c511",
-              "leftValue": "",
-              "rightValue": "",
-              "operator": {
-                "type": "string",
-                "operation": "equals",
-                "name": "filter.operator.equals"
-              }
-            }
-          ],
-          "combinator": "and"
-        },
         "options": {}
       },
-      "type": "n8n-nodes-base.if",
-      "typeVersion": 2.3,
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
       "position": [
-        -112,
-        -1744
+        208,
+        -16
       ],
-      "id": "44243cab-1fc9-4d0d-88e5-2d6f65f15c49",
-      "name": "If"
+      "id": "6d88b5bf-89a5-4d2b-b277-c081f0662d8e",
+      "name": "Edit Fields"
     }
   ],
   "connections": {
-    "When clicking ‘Execute workflow’": {
+    "When clicking 'Execute workflow'": {
       "main": [
-        []
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
       ]
     }
   },
   "settings": {
     "executionOrder": "v1",
-    "binaryMode": "separate",
     "availableInMCP": false
   },
   "triggerCount": 0,
-  "versionId": "fbf2024d-8bcd-40aa-9f05-88ee811ee5da",
+  "versionId": "2d0e4e75-a341-45d2-a3a5-62d5367d8134",
   "owner": {
     "type": "personal",
-    "projectId": "wa8OeadvFvy5w2sE",
-    "projectName": "Carlos Eduardo Afonso <cafonso@salsify.com>",
-    "personalEmail": "cafonso@salsify.com"
-  },
-  "parentFolderId": null,
-  "isArchived": false,
-  "nodeGroups": []
+    "projectId": "wa8OeadvFvy5w2sE"
+  }
 }
