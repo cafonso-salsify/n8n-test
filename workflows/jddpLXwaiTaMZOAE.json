@@ -1,62 +1,37 @@
 {
-  "id": "jddpLXwaiTaMZOAE",
-  "name": "My workflow",
+  "name": "Test Workflow",
   "nodes": [
     {
       "parameters": {},
       "type": "n8n-nodes-base.manualTrigger",
       "typeVersion": 1,
       "position": [
-        80,
-        208
+        0,
+        0
       ],
       "id": "e4873d88-7d69-4d94-ad9f-2555f9d86a6a",
-      "name": "When clicking ‘Execute workflow’"
-    },
-    {
-      "parameters": {
-        "jsCode": "// Loop over input items and add a new field called 'myNewField' to the JSON of each one\nfor (const item of $input.all()) {\n  item.json.myNewField = 1;\n}\n\nreturn $input.all();"
-      },
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
-      "position": [
-        288,
-        208
-      ],
-      "id": "677bfea9-94a7-4794-ab30-8e588c96a469",
-      "name": "Code in JavaScript"
+      "name": "When clicking 'Execute workflow'"
     },
     {
       "parameters": {
         "options": {}
       },
-      "type": "@n8n/n8n-nodes-langchain.agent",
-      "typeVersion": 3.1,
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
       "position": [
-        496,
-        208
+        208,
+        -16
       ],
-      "id": "fb60c3c8-75fa-4039-93c1-b115be5f4203",
-      "name": "AI Agent"
+      "id": "6d88b5bf-89a5-4d2b-b277-c081f0662d8e",
+      "name": "Edit Fields"
     }
   ],
   "connections": {
-    "When clicking ‘Execute workflow’": {
+    "When clicking 'Execute workflow'": {
       "main": [
         [
           {
-            "node": "Code in JavaScript",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Code in JavaScript": {
-      "main": [
-        [
-          {
-            "node": "AI Agent",
+            "node": "Edit Fields",
             "type": "main",
             "index": 0
           }
@@ -66,18 +41,12 @@
   },
   "settings": {
     "executionOrder": "v1",
-    "binaryMode": "separate",
     "availableInMCP": false
   },
   "triggerCount": 0,
-  "versionId": "df8d3c34-cebc-4089-b437-2dd0de176a6c",
+  "versionId": "2d0e4e75-a341-45d2-a3a5-62d5367d8134",
   "owner": {
     "type": "personal",
-    "projectId": "wa8OeadvFvy5w2sE",
-    "projectName": "Carlos Eduardo Afonso <cafonso@salsify.com>",
-    "personalEmail": "cafonso@salsify.com"
-  },
-  "parentFolderId": null,
-  "isArchived": false,
-  "nodeGroups": []
+    "projectId": "wa8OeadvFvy5w2sE"
+  }
 }
