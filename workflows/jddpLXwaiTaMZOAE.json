@@ -15,50 +15,29 @@
     },
     {
       "parameters": {
-        "conditions": {
-          "options": {
-            "caseSensitive": true,
-            "leftValue": "",
-            "typeValidation": "strict",
-            "version": 3
-          },
-          "conditions": [
-            {
-              "id": "22aa5eb9-c67d-4fa2-a83e-506f6e9c3d41",
-              "leftValue": "",
-              "rightValue": "",
-              "operator": {
-                "type": "string",
-                "operation": "equals",
-                "name": "filter.operator.equals"
-              }
-            }
-          ],
-          "combinator": "and"
-        },
-        "options": {}
-      },
-      "type": "n8n-nodes-base.if",
-      "typeVersion": 2.3,
-      "position": [
-        288,
-        208
-      ],
-      "id": "562fbe34-6f2e-40f2-b80b-ffcd3391d2b5",
-      "name": "If"
-    },
-    {
-      "parameters": {
         "jsCode": "// Loop over input items and add a new field called 'myNewField' to the JSON of each one\nfor (const item of $input.all()) {\n  item.json.myNewField = 1;\n}\n\nreturn $input.all();"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        496,
-        112
+        288,
+        208
       ],
-      "id": "a347f1e8-bd5b-4779-9f45-2535db1f9845",
+      "id": "12840945-ade3-4848-b2ff-165f8c13e4c2",
       "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        496,
+        208
+      ],
+      "id": "b32cef41-90ba-4b97-9e9a-636631ffb532",
+      "name": "AI Agent"
     }
   ],
   "connections": {
@@ -66,18 +45,18 @@
       "main": [
         [
           {
-            "node": "If",
+            "node": "Code in JavaScript",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "If": {
+    "Code in JavaScript": {
       "main": [
         [
           {
-            "node": "Code in JavaScript",
+            "node": "AI Agent",
             "type": "main",
             "index": 0
           }
@@ -91,7 +70,7 @@
     "availableInMCP": false
   },
   "triggerCount": 0,
-  "versionId": "459b7e18-a393-414e-8b2a-b0354d38a7e2",
+  "versionId": "17ff016d-4aeb-40f8-8eb7-1b56d24cfa35",
   "owner": {
     "type": "personal",
     "projectId": "wa8OeadvFvy5w2sE",
