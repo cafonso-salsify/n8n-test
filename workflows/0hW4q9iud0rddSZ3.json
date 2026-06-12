@@ -1,0 +1,40 @@
+{
+  "id": "0hW4q9iud0rddSZ3",
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {}
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        0,
+        0
+      ],
+      "id": "a68ec1aa-7334-4cd3-9e99-3523d84d4ab4",
+      "name": "Schedule Trigger"
+    }
+  ],
+  "connections": {},
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "triggerCount": 0,
+  "versionId": "a3204813-079a-465f-8e23-260747b20c24",
+  "owner": {
+    "type": "personal",
+    "projectId": "wa8OeadvFvy5w2sE",
+    "projectName": "Carlos Eduardo Afonso <cafonso@salsify.com>",
+    "personalEmail": "cafonso@salsify.com"
+  },
+  "parentFolderId": null,
+  "isArchived": false,
+  "nodeGroups": []
+}
