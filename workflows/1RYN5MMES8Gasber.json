@@ -12,12 +12,56 @@
       ],
       "id": "e063a819-064b-4d33-aaa3-8d913dd602e8",
       "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.4,
+      "position": [
+        208,
+        0
+      ],
+      "id": "80cd738f-252b-4f28-8f20-ff402633f892",
+      "name": "When chat message received",
+      "webhookId": "a0472d9b-4fee-471b-b95d-fe7226ed2f55"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        416,
+        0
+      ],
+      "id": "19b447f9-3cd4-4e61-a9ba-2de8ba769cdf",
+      "name": "AI Agent"
     }
   ],
   "connections": {
     "When clicking ‘Execute workflow’": {
       "main": [
-        []
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
       ]
     }
   },
@@ -27,7 +71,7 @@
     "availableInMCP": false
   },
   "triggerCount": 0,
-  "versionId": "2196d6b6-5aab-4b04-b50f-370a7be1dbf2",
+  "versionId": "85fc837e-da6a-4445-ab3b-8c98462e5d4d",
   "owner": {
     "type": "personal",
     "projectId": "wa8OeadvFvy5w2sE",
