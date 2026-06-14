@@ -6,58 +6,56 @@
       "parameters": {},
       "type": "n8n-nodes-base.manualTrigger",
       "typeVersion": 1,
-      "position": [
-        0,
-        0
-      ],
+      "position": [0, 0],
       "id": "e063a819-064b-4d33-aaa3-8d913dd602e8",
-      "name": "When clicking ‘Execute workflow’"
+      "name": "When clicking 'Execute workflow'"
     },
     {
       "parameters": {
-        "options": {}
+        "fields": {
+          "values": [
+            {
+              "name": "status",
+              "stringValue": "teste_rollback_ok"
+            }
+          ]
+        }
       },
-      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
-      "typeVersion": 1.4,
-      "position": [
-        208,
-        0
-      ],
-      "id": "516cef00-bcba-4236-a619-40297cae9c18",
-      "name": "When chat message received",
-      "webhookId": "40321dad-f588-47f9-b79d-d8c821dc88f9"
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [220, 0],
+      "id": "c1234567-abcd-4321-a123-999999999999",
+      "name": "Definir Dados"
     },
     {
       "parameters": {
+        "url": "https://httpbin.org/get",
         "options": {}
       },
-      "type": "@n8n/n8n-nodes-langchain.agent",
-      "typeVersion": 3.1,
-      "position": [
-        416,
-        0
-      ],
-      "id": "9f4836b0-57d6-403f-8f71-8163723a1708",
-      "name": "AI Agent"
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [440, 0],
+      "id": "h7654321-fedc-1234-b987-888888888888",
+      "name": "HTTP Request"
     }
   ],
   "connections": {
-    "When clicking ‘Execute workflow’": {
+    "When clicking 'Execute workflow'": {
       "main": [
         [
           {
-            "node": "AI Agent",
+            "node": "Definir Dados",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "When chat message received": {
+    "Definir Dados": {
       "main": [
         [
           {
-            "node": "AI Agent",
+            "node": "HTTP Request",
             "type": "main",
             "index": 0
           }
@@ -70,15 +68,5 @@
     "binaryMode": "separate",
     "availableInMCP": false
   },
-  "triggerCount": 0,
-  "versionId": "8ea75c85-8449-493b-9d0a-4906da2f66e6",
-  "owner": {
-    "type": "personal",
-    "projectId": "wa8OeadvFvy5w2sE",
-    "projectName": "Carlos Eduardo Afonso <cafonso@salsify.com>",
-    "personalEmail": "cafonso@salsify.com"
-  },
-  "parentFolderId": null,
-  "isArchived": false,
-  "nodeGroups": []
+  "triggerCount": 0
 }
