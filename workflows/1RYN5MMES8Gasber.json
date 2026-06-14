@@ -29,35 +29,50 @@
     },
     {
       "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "556618a4-dd94-4f5d-b6e7-8c57c29cb822",
+              "leftValue": "",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
         "options": {}
       },
-      "type": "@n8n/n8n-nodes-langchain.agent",
-      "typeVersion": 3.1,
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
       "position": [
-        416,
-        0
+        528,
+        64
       ],
-      "id": "19b447f9-3cd4-4e61-a9ba-2de8ba769cdf",
-      "name": "AI Agent"
+      "id": "a3060d02-fc26-424f-8d47-c47c3df9f652",
+      "name": "If"
     }
   ],
   "connections": {
     "When clicking ‘Execute workflow’": {
       "main": [
-        [
-          {
-            "node": "AI Agent",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        []
       ]
     },
     "When chat message received": {
       "main": [
         [
           {
-            "node": "AI Agent",
+            "node": "If",
             "type": "main",
             "index": 0
           }
@@ -71,7 +86,7 @@
     "availableInMCP": false
   },
   "triggerCount": 0,
-  "versionId": "e3d3bce4-645c-46b4-a7b2-b26de017c354",
+  "versionId": "7c50b857-36aa-4423-b6e8-d57de8590250",
   "owner": {
     "type": "personal",
     "projectId": "wa8OeadvFvy5w2sE",
