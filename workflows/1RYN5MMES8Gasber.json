@@ -6,12 +6,9 @@
       "parameters": {},
       "type": "n8n-nodes-base.manualTrigger",
       "typeVersion": 1,
-      "position": [
-        0,
-        0
-      ],
+      "position": [0, 0],
       "id": "e063a819-064b-4d33-aaa3-8d913dd602e8",
-      "name": "When clicking ‘Execute workflow’"
+      "name": "When clicking 'Execute workflow'"
     },
     {
       "parameters": {
@@ -19,10 +16,7 @@
       },
       "type": "@n8n/n8n-nodes-langchain.chatTrigger",
       "typeVersion": 1.4,
-      "position": [
-        208,
-        0
-      ],
+      "position": [208, 0],
       "id": "80cd738f-252b-4f28-8f20-ff402633f892",
       "name": "When chat message received",
       "webhookId": "a0472d9b-4fee-471b-b95d-fe7226ed2f55"
@@ -54,16 +48,13 @@
       },
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
-      "position": [
-        528,
-        64
-      ],
+      "position": [528, 64],
       "id": "a3060d02-fc26-424f-8d47-c47c3df9f652",
       "name": "If"
     }
   ],
   "connections": {
-    "When clicking ‘Execute workflow’": {
+    "When clicking 'Execute workflow'": {
       "main": [
         []
       ]
