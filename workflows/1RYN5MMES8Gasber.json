@@ -15,30 +15,16 @@
     },
     {
       "parameters": {
-        "options": {}
+        "jsCode": "// Loop over input items and add a new field called 'myNewField' to the JSON of each one\nfor (const item of $input.all()) {\n  item.json.myNewField = 1;\n}\n\nreturn $input.all();"
       },
-      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
-      "typeVersion": 1.4,
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
       "position": [
         208,
         0
       ],
-      "id": "c7467422-dd11-4e08-8f42-4de4918f1de3",
-      "name": "When chat message received",
-      "webhookId": "ccd86438-f282-46b4-ac50-49eab126ee96"
-    },
-    {
-      "parameters": {
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.agent",
-      "typeVersion": 3.1,
-      "position": [
-        416,
-        0
-      ],
-      "id": "586e8439-c0d9-4736-8a9b-bad61b539f83",
-      "name": "AI Agent"
+      "id": "696a839a-7c9f-4bf4-87cd-661f1a3c59eb",
+      "name": "Code in JavaScript"
     }
   ],
   "connections": {
@@ -46,18 +32,7 @@
       "main": [
         [
           {
-            "node": "AI Agent",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "When chat message received": {
-      "main": [
-        [
-          {
-            "node": "AI Agent",
+            "node": "Code in JavaScript",
             "type": "main",
             "index": 0
           }
@@ -71,7 +46,7 @@
     "availableInMCP": false
   },
   "triggerCount": 0,
-  "versionId": "36dbc9cf-267e-4a4b-8292-fd2ca5037645",
+  "versionId": "ce90bd8a-46fa-4db6-b922-676a5a85d952",
   "owner": {
     "type": "personal",
     "projectId": "wa8OeadvFvy5w2sE",
