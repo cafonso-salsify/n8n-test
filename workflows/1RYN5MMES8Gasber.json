@@ -6,7 +6,10 @@
       "parameters": {},
       "type": "n8n-nodes-base.manualTrigger",
       "typeVersion": 1,
-      "position": [0, 0],
+      "position": [
+        0,
+        0
+      ],
       "id": "e063a819-064b-4d33-aaa3-8d913dd602e8",
       "name": "When clicking 'Execute workflow'"
     },
@@ -16,54 +19,45 @@
       },
       "type": "@n8n/n8n-nodes-langchain.chatTrigger",
       "typeVersion": 1.4,
-      "position": [208, 0],
-      "id": "80cd738f-252b-4f28-8f20-ff402633f892",
+      "position": [
+        208,
+        0
+      ],
+      "id": "c7467422-dd11-4e08-8f42-4de4918f1de3",
       "name": "When chat message received",
-      "webhookId": "a0472d9b-4fee-471b-b95d-fe7226ed2f55"
+      "webhookId": "ccd86438-f282-46b4-ac50-49eab126ee96"
     },
     {
       "parameters": {
-        "conditions": {
-          "options": {
-            "caseSensitive": true,
-            "leftValue": "",
-            "typeValidation": "strict",
-            "version": 3
-          },
-          "conditions": [
-            {
-              "id": "556618a4-dd94-4f5d-b6e7-8c57c29cb822",
-              "leftValue": "",
-              "rightValue": "",
-              "operator": {
-                "type": "string",
-                "operation": "equals",
-                "name": "filter.operator.equals"
-              }
-            }
-          ],
-          "combinator": "and"
-        },
         "options": {}
       },
-      "type": "n8n-nodes-base.if",
-      "typeVersion": 2.3,
-      "position": [528, 64],
-      "id": "a3060d02-fc26-424f-8d47-c47c3df9f652",
-      "name": "If"
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        416,
+        0
+      ],
+      "id": "586e8439-c0d9-4736-8a9b-bad61b539f83",
+      "name": "AI Agent"
     }
   ],
   "connections": {
     "When clicking 'Execute workflow'": {
       "main": [
-        []
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
       ]
     },
     "When chat message received": {
       "main": [
         [
           {
-            "node": "If",
+            "node": "AI Agent",
             "type": "main",
             "index": 0
           }
@@ -77,7 +71,7 @@
     "availableInMCP": false
   },
   "triggerCount": 0,
-  "versionId": "7c50b857-36aa-4423-b6e8-d57de8590250",
+  "versionId": "36dbc9cf-267e-4a4b-8292-fd2ca5037645",
   "owner": {
     "type": "personal",
     "projectId": "wa8OeadvFvy5w2sE",
