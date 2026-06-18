@@ -1,0 +1,14 @@
+{
+  "id": "Ymuu6UtMkjjcHVmD",
+  "name": "Salsify API Key (Org 21834)",
+  "type": "httpBearerAuth",
+  "data": {
+    "token": ""
+  },
+  "ownedBy": {
+    "type": "team",
+    "teamId": "9ONu8L3hFDATTE0N",
+    "teamName": "Client - Crayola"
+  },
+  "isGlobal": false
+}

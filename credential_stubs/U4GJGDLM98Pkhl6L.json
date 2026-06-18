@@ -1,0 +1,15 @@
+{
+  "id": "U4GJGDLM98Pkhl6L",
+  "name": "Bearer Auth account",
+  "type": "httpBearerAuth",
+  "data": {
+    "token": ""
+  },
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "wa8OeadvFvy5w2sE",
+    "projectName": "Carlos Eduardo Afonso <cafonso@salsify.com>",
+    "personalEmail": "cafonso@salsify.com"
+  },
+  "isGlobal": false
+}

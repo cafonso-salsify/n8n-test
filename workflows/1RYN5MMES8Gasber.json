@@ -7,38 +7,33 @@
       "type": "n8n-nodes-base.manualTrigger",
       "typeVersion": 1,
       "position": [
-        0,
-        0
+        -96,
+        -336
       ],
-      "id": "e063a819-064b-4d33-aaa3-8d913dd602e8",
+      "id": "147ed0c0-451d-48bc-a431-2c37d3c52aef",
       "name": "When clicking 'Execute workflow'"
     },
     {
       "parameters": {
+        "url": "https://app.salsify.com/api/orgs/s-d96512f2-6dfb-4c4d-bc1c-50b8e49704d4/products",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBearerAuth",
         "options": {}
       },
-      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
-      "typeVersion": 1.4,
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
       "position": [
-        208,
-        0
+        112,
+        -336
       ],
-      "id": "c7467422-dd11-4e08-8f42-4de4918f1de3",
-      "name": "When chat message received",
-      "webhookId": "ccd86438-f282-46b4-ac50-49eab126ee96"
-    },
-    {
-      "parameters": {
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.agent",
-      "typeVersion": 3.1,
-      "position": [
-        416,
-        0
-      ],
-      "id": "586e8439-c0d9-4736-8a9b-bad61b539f83",
-      "name": "AI Agent"
+      "id": "3707e9d4-741b-4e20-a3c3-11d1eaa913e2",
+      "name": "HTTP Request",
+      "credentials": {
+        "httpBearerAuth": {
+          "id": "U4GJGDLM98Pkhl6L",
+          "name": "Bearer Auth account"
+        }
+      }
     }
   ],
   "connections": {
@@ -46,22 +41,16 @@
       "main": [
         [
           {
-            "node": "AI Agent",
+            "node": "HTTP Request",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "When chat message received": {
+    "HTTP Request": {
       "main": [
-        [
-          {
-            "node": "AI Agent",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        []
       ]
     }
   },
@@ -71,7 +60,7 @@
     "availableInMCP": false
   },
   "triggerCount": 0,
-  "versionId": "36dbc9cf-267e-4a4b-8292-fd2ca5037645",
+  "versionId": "2ed251f0-d149-4749-abc9-44b91cb431da",
   "owner": {
     "type": "personal",
     "projectId": "wa8OeadvFvy5w2sE",
