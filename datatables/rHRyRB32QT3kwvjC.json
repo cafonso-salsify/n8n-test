@@ -1,0 +1,31 @@
+{
+  "id": "rHRyRB32QT3kwvjC",
+  "name": "[Auto] Sell Sheets | Template Mappings List 1194298",
+  "columns": [
+    {
+      "id": "EPIwVnxVlI8H7sBb",
+      "name": "salsifyId",
+      "type": "string",
+      "index": 0
+    },
+    {
+      "id": "ujBugrg3Qwgy66ya",
+      "name": "templateId",
+      "type": "string",
+      "index": 1
+    },
+    {
+      "id": "jGdN49qwOFEznzwP",
+      "name": "type",
+      "type": "string",
+      "index": 2
+    }
+  ],
+  "ownedBy": {
+    "type": "team",
+    "teamId": "9ONu8L3hFDATTE0N",
+    "teamName": "Client - Crayola"
+  },
+  "createdAt": "2026-06-17T13:25:25.826Z",
+  "updatedAt": "2026-06-17T14:08:11.429Z"
+}

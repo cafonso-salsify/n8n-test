@@ -1,0 +1,29 @@
+{
+  "id": "9ONu8L3hFDATTE0N",
+  "name": "Client - Crayola",
+  "icon": {
+    "type": "icon",
+    "value": "layers"
+  },
+  "description": "",
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "9ONu8L3hFDATTE0N",
+    "teamName": "Client - Crayola"
+  },
+  "variableStubs": [
+    {
+      "id": "WJF5oQR6y1F5RPDJ",
+      "key": "org_id",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "id": "a9hJxII8ZedSnREV",
+      "key": "sell_sheets_google_drive_folder_id",
+      "type": "string",
+      "value": ""
+    }
+  ]
+}

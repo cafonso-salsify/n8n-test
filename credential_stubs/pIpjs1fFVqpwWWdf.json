@@ -1,0 +1,13 @@
+{
+  "id": "pIpjs1fFVqpwWWdf",
+  "name": "Google Drive account",
+  "type": "googleDriveOAuth2Api",
+  "data": {},
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "U0BRyfGR73da7qRk",
+    "projectName": "Margarida Rita <mrita@salsify.com>",
+    "personalEmail": "mrita@salsify.com"
+  },
+  "isGlobal": true
+}

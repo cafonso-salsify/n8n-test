@@ -1,0 +1,49 @@
+{
+  "id": "FFxt6dT93QDAmR3y",
+  "name": "[Auto] Sell Sheets | Products Sell Sheets",
+  "columns": [
+    {
+      "id": "utuEA14tDZf2NPnL",
+      "name": "productId",
+      "type": "string",
+      "index": 0
+    },
+    {
+      "id": "PD30JHsh8zRZGS9x",
+      "name": "listID",
+      "type": "string",
+      "index": 1
+    },
+    {
+      "id": "g768whzyEaBDJNCS",
+      "name": "templateId",
+      "type": "string",
+      "index": 2
+    },
+    {
+      "id": "QhnQ5mjrrAy3vQfv",
+      "name": "outputFilename",
+      "type": "string",
+      "index": 3
+    },
+    {
+      "id": "8sRl5cXyzArcaHiF",
+      "name": "outputExtension",
+      "type": "string",
+      "index": 4
+    },
+    {
+      "id": "KZAFwxIpC1yGwv7G",
+      "name": "generatedFile",
+      "type": "string",
+      "index": 5
+    }
+  ],
+  "ownedBy": {
+    "type": "team",
+    "teamId": "9ONu8L3hFDATTE0N",
+    "teamName": "Client - Crayola"
+  },
+  "createdAt": "2026-06-17T10:15:13.441Z",
+  "updatedAt": "2026-06-18T08:47:12.967Z"
+}

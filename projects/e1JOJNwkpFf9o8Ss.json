@@ -1,0 +1,16 @@
+{
+  "id": "e1JOJNwkpFf9o8Ss",
+  "name": "Sub-Workflows - Sell Sheets",
+  "icon": {
+    "type": "icon",
+    "value": "layers"
+  },
+  "description": "",
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "e1JOJNwkpFf9o8Ss",
+    "teamName": "Sub-Workflows - Sell Sheets"
+  },
+  "variableStubs": []
+}

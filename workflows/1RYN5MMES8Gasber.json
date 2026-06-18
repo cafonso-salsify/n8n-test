@@ -25,6 +25,19 @@
       ],
       "id": "696a839a-7c9f-4bf4-87cd-661f1a3c59eb",
       "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        416,
+        0
+      ],
+      "id": "9c3c9fa4-a4c0-475c-b273-e430b7d8f67b",
+      "name": "AI Agent"
     }
   ],
   "connections": {
@@ -38,6 +51,17 @@
           }
         ]
       ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "settings": {
@@ -46,7 +70,7 @@
     "availableInMCP": false
   },
   "triggerCount": 0,
-  "versionId": "ce90bd8a-46fa-4db6-b922-676a5a85d952",
+  "versionId": "28297058-0db5-485c-8379-aaa675e8bd2d",
   "owner": {
     "type": "personal",
     "projectId": "wa8OeadvFvy5w2sE",

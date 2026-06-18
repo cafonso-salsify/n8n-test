@@ -1,0 +1,20 @@
+{
+  "id": "CxQQ0MgbJ0HxKwlH",
+  "name": "Sell Sheets - Templates Info",
+  "columns": [
+    {
+      "id": "DvcEVTjdX4GVHLss",
+      "name": "listId",
+      "type": "string",
+      "index": 0
+    }
+  ],
+  "ownedBy": {
+    "type": "personal",
+    "projectId": "U0BRyfGR73da7qRk",
+    "projectName": "Margarida Rita <mrita@salsify.com>",
+    "personalEmail": "mrita@salsify.com"
+  },
+  "createdAt": "2026-06-16T19:41:56.035Z",
+  "updatedAt": "2026-06-16T19:42:04.386Z"
+}

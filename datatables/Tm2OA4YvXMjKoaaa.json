@@ -1,0 +1,19 @@
+{
+  "id": "Tm2OA4YvXMjKoaaa",
+  "name": "Sell Sheets | Allowed Lists",
+  "columns": [
+    {
+      "id": "2rnq9JNy2eAd8iMm",
+      "name": "listId",
+      "type": "string",
+      "index": 0
+    }
+  ],
+  "ownedBy": {
+    "type": "team",
+    "teamId": "9ONu8L3hFDATTE0N",
+    "teamName": "Client - Crayola"
+  },
+  "createdAt": "2026-06-16T17:36:31.834Z",
+  "updatedAt": "2026-06-17T12:59:22.000Z"
+}

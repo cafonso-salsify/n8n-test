@@ -1,0 +1,49 @@
+{
+  "id": "xJgbkqLeBxTyLlyF",
+  "name": "[Auto] Sell Sheets | Templates Info",
+  "columns": [
+    {
+      "id": "nyOpJP3bDJOH6opc",
+      "name": "listId",
+      "type": "string",
+      "index": 0
+    },
+    {
+      "id": "zcQtIVBpjLKXl9Pl",
+      "name": "templateName",
+      "type": "string",
+      "index": 1
+    },
+    {
+      "id": "r7c1JimgXLYwYNnz",
+      "name": "templateId",
+      "type": "string",
+      "index": 2
+    },
+    {
+      "id": "CCgKs1MzziuYKXUl",
+      "name": "templateMimeType",
+      "type": "string",
+      "index": 3
+    },
+    {
+      "id": "Dg7OtIgh9jjyuJBs",
+      "name": "outputFilename",
+      "type": "string",
+      "index": 4
+    },
+    {
+      "id": "1hV5Q4NCZA9mcbv2",
+      "name": "outputExtension",
+      "type": "string",
+      "index": 5
+    }
+  ],
+  "ownedBy": {
+    "type": "team",
+    "teamId": "9ONu8L3hFDATTE0N",
+    "teamName": "Client - Crayola"
+  },
+  "createdAt": "2026-06-16T19:44:29.084Z",
+  "updatedAt": "2026-06-18T09:40:20.858Z"
+}
