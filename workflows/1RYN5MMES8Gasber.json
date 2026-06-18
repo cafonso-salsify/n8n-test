@@ -7,37 +7,33 @@
       "type": "n8n-nodes-base.manualTrigger",
       "typeVersion": 1,
       "position": [
-        0,
-        0
+        -96,
+        -336
       ],
-      "id": "e063a819-064b-4d33-aaa3-8d913dd602e8",
+      "id": "147ed0c0-451d-48bc-a431-2c37d3c52aef",
       "name": "When clicking 'Execute workflow'"
     },
     {
       "parameters": {
-        "jsCode": "// Loop over input items and add a new field called 'myNewField' to the JSON of each one\nfor (const item of $input.all()) {\n  item.json.myNewField = 1;\n}\n\nreturn $input.all();"
-      },
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
-      "position": [
-        208,
-        0
-      ],
-      "id": "696a839a-7c9f-4bf4-87cd-661f1a3c59eb",
-      "name": "Code in JavaScript"
-    },
-    {
-      "parameters": {
+        "url": "https://app.salsify.com/api/orgs/s-d96512f2-6dfb-4c4d-bc1c-50b8e49704d4/products",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBearerAuth",
         "options": {}
       },
-      "type": "@n8n/n8n-nodes-langchain.agent",
-      "typeVersion": 3.1,
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
       "position": [
-        416,
-        0
+        112,
+        -336
       ],
-      "id": "9c3c9fa4-a4c0-475c-b273-e430b7d8f67b",
-      "name": "AI Agent"
+      "id": "3707e9d4-741b-4e20-a3c3-11d1eaa913e2",
+      "name": "HTTP Request",
+      "credentials": {
+        "httpBearerAuth": {
+          "id": "U4GJGDLM98Pkhl6L",
+          "name": "Bearer Auth account"
+        }
+      }
     }
   ],
   "connections": {
@@ -45,22 +41,16 @@
       "main": [
         [
           {
-            "node": "Code in JavaScript",
+            "node": "HTTP Request",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Code in JavaScript": {
+    "HTTP Request": {
       "main": [
-        [
-          {
-            "node": "AI Agent",
-            "type": "main",
-            "index": 0
-          }
-        ]
+        []
       ]
     }
   },
@@ -70,7 +60,7 @@
     "availableInMCP": false
   },
   "triggerCount": 0,
-  "versionId": "28297058-0db5-485c-8379-aaa675e8bd2d",
+  "versionId": "2ed251f0-d149-4749-abc9-44b91cb431da",
   "owner": {
     "type": "personal",
     "projectId": "wa8OeadvFvy5w2sE",
